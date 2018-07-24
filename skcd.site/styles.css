@@ -1,0 +1,170 @@
+:root {
+    --primary: #fff;
+    --highlight: #00FF7F;
+    --light: gray;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    }
+
+html {
+  box-string: border-box;
+  font-family: arial, helvetica, sans-serif;
+  color: var(--primary);
+}
+
+body {
+  background: #1D1D1D;
+  margin:10px 30px;
+  line-height: 1.4;
+}
+
+img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-gap: 5px;
+  grid-template-areas:
+  'header'
+  'wwa'
+  'splash1'
+  'wwd'
+  'splash2'
+  'contact'
+  'footer';
+}
+
+.header {
+  display: grid;
+  min-height: 800px;
+  background: url(img/background.jpg);
+  background-size: 100%;
+  background-position: center;
+  bottom-margin: 80px;
+  grid-area: header;
+  grid-template-areas:
+  'logo nav'
+
+
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  grid-area: logo;
+}
+
+.logo img {
+  min-width: 35%;
+  min-height: 15%;
+  max-height:15%;
+  max-width: 45%;
+  width: 50%;
+
+}
+
+.nav {
+  display: flex;
+  min-width: 45%;
+  max-width: 45%;
+  align-content: right;
+  justify-content: right;
+  grid-area: nav;
+
+}
+
+.nav ul {
+  display:grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
+.nav a {
+  display: block;
+  background: var(--#1D1D1D);
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: .8em;
+}
+
+.background {
+  display: grid;
+  grid-area: background;
+}
+
+.wwa {
+  display: grid;
+  grid-area: wwa;
+  grid-gap: 10px;
+  grid-template-areas:
+  'wwa wwa'
+  'wwaph wwaph';
+
+}
+
+.wwa h1 {
+  text-align: right;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color: var(--primary);
+}
+
+.wwa p {
+  justify-items: right;
+  text-align: right;
+  font-size: .8rem;
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.wwaph {
+  display: grid;
+  min-width: 100%;
+  grid-area: wwaph;
+  background: url(img/wwa.placeholder.png);
+  margin-bottom: 60px;
+}
+
+.splash1 {
+  display:grid;
+  grid-area: splash1;
+  min-width: 100%;
+  margin-bottom: 0px;
+}
+
+.wwd {
+  display:grid;
+  grid-area: wwd;
+  min-width: 100%;
+  margin-top: 0px;
+}
+
+.splash2 {
+  display: grid;
+  grid-area: splash2;
+  min-width: 100%;
+}
+
+.contact {
+  display: grid;
+  grid-area: contact;
+  min-width: 100%;
+  background-image: url("img/contact.png");
+}
+
+.footer {
+  display: grid;
+  grid-area: footer;
+  margin-top: 2rem;
+  background: #1D1D1D;
+  color: var(--primary);
+  text-align: center;
+  padding: 1rem;
+}
