@@ -1,5 +1,5 @@
 # skcd-site<br>
-<b>Contributors</b><br>
+<b><u>Contributors</u></b><br>
 Bear Simsek <br>
 Brandan Rosado <br>
 Heather Peterson <br>
