@@ -66,9 +66,75 @@
     </div>
 
 <!--contact-->
-    <div class="contact">
-      <img src="img/contact.png">
-    </div>
+      <div class="contact">
+          <img src="img/contact.png">
+        <div role="main" class="container">
+          <br><br>
+      
+          <h1>Ask Us Now</h1>
+    
+          <div class="form-group">
+              <label for="txtYourName">Your Name:</label>
+              <input type="text" class="form-control alert-warning" data-bind="value: YourName" id="txtFirstName">
+          </div>
+    
+          <div class="form-group">
+              <label for="txtEmail">Email:</label>
+              <input type="text" class="form-control alert-warning" data-bind="value: email" id="txtEmail">
+          </div>
+    
+          <div class="form-group">
+              <label for="txtComment">Question or Idea?</label>
+              <input type="text" class="form-control alert-warning" data-bind="value: comment" id="txtComment">
+          </div>
+          <div class="submit">
+          <button class="button">Submit</button>
+          </div>
+      </div>
+      </div>
+      <style>
+
+        h1 {
+              color: black;
+              text-align: center;
+              margin-bottom: 20px;
+              position: relative;
+          } 
+
+          .form-group {
+              text-align: center;
+              color: black;
+              position: relative;
+          }
+         
+          .submit {
+            text-align: center;
+          }
+
+          .button {
+              display: inline-block;
+              padding: 5px 20px;
+              font-size: 10px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: rgb(67, 172, 71);
+              border: none;
+              border-radius: 25px;
+              box-shadow: 0 6px #999;
+          }
+
+          .button:hover {background-color: #3e8e41}
+
+          .button:active {
+              background-color: #3e8e41;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+          }
+
+      </style>
 
 <!--footer-->
     <div class="footer">
