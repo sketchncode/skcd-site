@@ -70,72 +70,75 @@
           <img src="img/contact.png">
         <div role="main" class="container">
           <br><br>
-      
-          <h1>Ask Us Now</h1>
+
+<!-- Include CSS file here -->
+<link href="../contact-box/contact.css" rel="stylesheet">
+</head>
+<body>
+<div id="main">
+<h1>Tell Us More </h1>
+<div id="form_sample"></div> 
+
+<!-- Include JS file here -->
+<script>// Fetching HTML Elements in Variables by ID.
+    var x = document.getElementById("form_sample");
+    var createform = document.createElement('form'); // Create New Element Form
+    createform.setAttribute("action", ""); // Setting Action Attribute on Form
+    createform.setAttribute("method", "post"); // Setting Method Attribute on Form
+    x.appendChild(createform);
     
-          <div class="form-group">
-              <label for="txtYourName">Your Name :</label>
-              <input type="text" class="form-control alert-warning" data-bind="value: YourName" id="txtFirstName">
-          </div>
+    var heading = document.createElement('h2'); // Heading of Form
+    heading.innerHTML = "Contact Form ";
+    createform.appendChild(heading);
     
-          <div class="form-group">
-              <label for="txtEmail">Email:</label>
-              <input type="text" class="form-control alert-warning" data-bind="value: email" id="txtEmail">
-          </div>
+    var line = document.createElement('hr'); // Giving Horizontal Row After Heading
+    createform.appendChild(line);
     
-          <div class="form-group">
-              <label for="txtComment">Question or Idea?</label>
-              <input type="text" class="form-control alert-warning" data-bind="value: comment" id="txtComment">
-          </div>
-          <div class="submit">
-          <button class="button">Submit</button>
-          </div>
-      </div>
-      </div>
-      <style>
-
-        h1 {
-              color: black;
-              text-align: center;
-              margin-bottom: 20px;
-              position: relative;
-          } 
-
-          .form-group {
-              text-align: center;
-              color: black;
-              position: relative;
-          }
-         
-          .submit {
-            text-align: center;
-          }
-
-          .button {
-              display: inline-block;
-              padding: 5px 20px;
-              font-size: 10px;
-              cursor: pointer;
-              text-align: center;
-              text-decoration: none;
-              outline: none;
-              color: #fff;
-              background-color: rgb(67, 172, 71);
-              border: none;
-              border-radius: 25px;
-              box-shadow: 0 6px #999;
-          }
-
-          .button:hover {background-color: #3e8e41}
-
-          .button:active {
-              background-color: #3e8e41;
-              box-shadow: 0 5px #666;
-              transform: translateY(4px);
-          }
-
-      </style>
-
+    var linebreak = document.createElement('br');
+    createform.appendChild(linebreak);
+    
+    var namelabel = document.createElement('label'); // Create Label for Name Field
+    namelabel.innerHTML = "Your Name : "; // Set Field Labels
+    createform.appendChild(namelabel);
+    
+    var inputelement = document.createElement('input'); // Create Input Field for Name
+    inputelement.setAttribute("type", "text");
+    inputelement.setAttribute("name", "dname");
+    createform.appendChild(inputelement);
+    
+    var linebreak = document.createElement('br');
+    createform.appendChild(linebreak);
+    
+    var emaillabel = document.createElement('label'); // Create Label for E-mail Field
+    emaillabel.innerHTML = "Your Email : ";
+    createform.appendChild(emaillabel);
+    
+    var emailelement = document.createElement('input'); // Create Input Field for E-mail
+    emailelement.setAttribute("type", "text");
+    emailelement.setAttribute("name", "demail");
+    createform.appendChild(emailelement);
+    
+    var emailbreak = document.createElement('br');
+    createform.appendChild(emailbreak);
+    
+    var messagelabel = document.createElement('label'); // Append Textarea
+    messagelabel.innerHTML = "Your Message : ";
+    createform.appendChild(messagelabel);
+    
+    var texareaelement = document.createElement('textarea');
+    texareaelement.setAttribute("name", "dmessage");
+    createform.appendChild(texareaelement);
+    
+    var messagebreak = document.createElement('br');
+    createform.appendChild(messagebreak);
+    
+    var submitelement = document.createElement('input'); // Append Submit Button
+    submitelement.setAttribute("type", "submit");
+    submitelement.setAttribute("name", "dsubmit");
+    submitelement.setAttribute("value", "Submit");
+    createform.appendChild(submitelement);
+</script>
+</div>
 <!--footer-->
     <div class="footer">
       <p>&copy;Sketch+Code 2018 * All rights reserved * Team SKCD </p>
